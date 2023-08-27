@@ -1,0 +1,38 @@
+div{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    
+    animation: diAnimate 3s ease-in  infinite 2s  normal ;
+   
+    
+}
+body{
+    background-color:blue;
+}
+
+
+@keyframes diAnimate {
+    0%{
+        left: 0px;
+       background-color: black;
+    }
+    50%{
+        background-color: crimson;
+    }
+    100%{
+        left: 600px;
+      background-color: chocolate;
+    }
+    
+}
+div:hover{
+    /* transform: translate(50px); */
+    transform: scale(2);
+    transition-delay: 1s;
+  
+}
